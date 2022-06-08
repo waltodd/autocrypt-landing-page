@@ -1,0 +1,27 @@
+export default {
+    name:'pricing',
+    title:'Pricing',
+    type:'document',
+    fields:[
+        {
+            name:'name',
+            title:'Name',
+            type:'string'
+        },
+        {
+            name:'price',
+            title:'Price',
+            type:'number'
+        },
+        {
+            name:'period',
+            title:'Period',
+            type:'string'
+        },
+         {
+            name:'description',
+            title:'Description',
+            type:'string'
+        }, 
+    ]
+}
