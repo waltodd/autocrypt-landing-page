@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
 import {Navbar} from './components'
 import {Header, Footer, Testimonial, Pricing, Benefit, Partner} from './container'
 
 const  App = ()  =>{
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <Header />
       <Benefit />

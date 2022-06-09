@@ -4,7 +4,12 @@ export default {
     type:'document',
     fields:[
         {
-           name:'imgurl',
+            name:'name',
+            title:'Name',
+            type:'string',
+         },
+        {
+           name:'imgUrl',
            title:'imgUrl',
            type:'image',
            options:{

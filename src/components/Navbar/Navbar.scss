@@ -1,0 +1,210 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: fixed;
+  z-index: 9;
+  margin: 0 auto;
+  padding: 0 7rem;
+  height: 4rem;
+  @media screen and (max-width: 900px) {
+    padding: 0 3rem;
+  }
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 26px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+
+  li {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+
+    div {
+      width: 5px;
+      width: 5px;
+      background: transparent;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: var(--white-color);
+      text-decoration: none;
+      flex-direction: column;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &:hover {
+      div {
+        background: var(--secondary-color);
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.app__navbar-btns {
+  display: flex;
+  justify-content: space-between;
+  .app__navbar-btn-login {
+    width: 120px;
+    height: 40px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  .app__navbar-btn-register {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px 0 5px 0;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: var(--primary-color) 0px 1px 4px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+
+  svg {
+    width: 100%;
+    height: 70%;
+    color: var(--white-color);
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: url("../../assets/bgWhite.png");
+
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    svg {
+      width: 70px;
+      height: 30px;
+      color: var(--white-color);
+      margin: 0.5rem 1rem;
+      z-index: 5;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: capitalize;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+
+    .app__navbar-btns {
+      padding-right: 10rem;
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

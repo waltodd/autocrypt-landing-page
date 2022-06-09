@@ -1,0 +1,25 @@
+export default {
+    name:'benefits',
+    title:'Benefits',
+    type:'document',
+    fields:[
+        {
+            name:'imgUrl',
+            title:'imgUrl',
+            type:'image',
+            options:{
+                hotspot:true
+            } 
+         },
+         {
+            name:'name',
+            title:'Name',
+            type:'string', 
+         },
+         {
+            name:'description',
+            title:'Description',
+            type:'string', 
+         }
+    ]
+}
