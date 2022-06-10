@@ -20,7 +20,7 @@ const Header = () => {
                 Easiest way to mining your bitcoin Autocryp is the place to buy
                 and sell Bitcoin, Ethereum and various kinds of Digital Assets
                 in Indonesia. Then, book your weekly, bi-weekly or one-off clean
-                online with imminent confirmation. Get Started
+                online with imminent confirmation.
               </p>
               <button className="app__header-btn">get started</button>
             </div>

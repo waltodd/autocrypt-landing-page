@@ -11,7 +11,6 @@ const Benefit = () => {
 
     client.fetch(query).then((data) => {
       setBenefits(data);
-      console.log(data);
     });
   }, []);
 
